@@ -1,0 +1,238 @@
+:root {
+  --btn-border: #2286ea;
+  --main-color: #ffffff;
+  --body-color: #272b30;
+  --dark-color: #1c1e22;
+}
+
+body {
+  background-color: var(--body-color);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* navbar style */
+.navbar {
+  border-bottom: 2px solid rgb(49, 47, 47);
+  background-color: var(--body-color) !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* Btns */
+}
+.navbar .logoPic {
+  cursor: pointer;
+  width: 70px;
+}
+.navbar .loginBtn {
+  color: rgb(89, 85, 85);
+}
+.navbar .loginBtn:hover {
+  color: rgb(175, 162, 162);
+}
+.navbar .joinBtn {
+  border: 1px solid var(--btn-border);
+  border-radius: 7px;
+  color: var(--btn-border);
+  border-radius: 5px;
+  background-color: inherit;
+}
+
+.specialNav {
+  margin: 0 5px;
+  color: #ffffff;
+}
+.specialNav:hover {
+  color: #ffffff !important;
+}
+
+.gamePic {
+  width: 108px;
+  height: 72px;
+}
+
+.loginSec .login-form .login-img .imgBack {
+  height: 100%;
+  width: 100%;
+  background-image: url("../assets/gaming.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.loginSec .login-form .login-info button {
+  border: 1px solid rgb(24, 23, 23);
+  background-color: #212325;
+}
+
+.login-info {
+  background-color: #1c1e22;
+}
+
+.line,
+.loginForm {
+  border-bottom: 1px solid rgb(50, 49, 49);
+}
+
+.joinSec {
+  border-bottom: 0;
+}
+.joinSec .name {
+  border: none;
+}
+.joinSec .name input {
+  border-radius: 5px;
+  width: calc(50% - 10px);
+}
+.joinSec input,
+.joinSec .name input {
+  border: 0px solid rgba(0, 0, 0, 0.6);
+}
+.joinSec input {
+  background-color: #ffffff !important;
+  color: #1c1e22 !important;
+}
+.joinSec button {
+  border: 1px solid rgb(24, 23, 23);
+  background-color: #212325;
+}
+
+.line {
+  width: 80%;
+}
+
+.home-pic {
+  background-repeat: no-repeat;
+  background-color: #1c1e22;
+  background-position: top;
+  background-size: contain;
+}
+.home-pic h1,
+.home-pic h2 {
+  padding: 3rem 0 0.25rem 0;
+  color: rgb(108, 117, 125);
+}
+
+.homeDivider {
+  border-bottom: 2px solid black;
+  width: 100%;
+}
+
+.browser-game {
+  border: 1px solid #6c757d !important;
+  border-radius: 7px;
+}
+.browser-game:hover {
+  border: none;
+}
+
+.homeLine {
+  background-color: #32383e;
+}
+
+.bottomHome {
+  padding: 2rem 1rem;
+}
+
+.badge {
+  font-size: 16px;
+}
+
+.singleCart {
+  overflow: hidden;
+  padding: 8px;
+}
+.singleCart .freeBtn {
+  padding: 10px 15px;
+  border: #343a40;
+  border-radius: 10px;
+}
+.singleCart .playBtn {
+  width: 80%;
+}
+
+.SingleGame .single-pic {
+  transition: 0.5s;
+  background-color: red;
+}
+.SingleGame .single-pic:hover {
+  opacity: 0.7;
+}
+
+.picScroll {
+  width: 100%;
+}
+
+.addition {
+  color: rgb(170, 170, 170);
+}
+
+.gamesContainer {
+  margin-top: 100px;
+}
+@media (max-width: 992px) {
+  .gamesContainer {
+    margin-top: 70px;
+  }
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loading .loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: animloader 1s linear infinite;
+}
+@keyframes animloader {
+  0% {
+    box-shadow: -72px 0 #2286ea inset;
+  }
+  100% {
+    box-shadow: 48px 0 #2286ea inset;
+  }
+}
+
+.formLoading {
+  width: 18px;
+  height: 18px;
+  border: 5px solid #fff;
+  border-bottom-color: #2286ea;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.specialNav.active {
+  color: white !important;
+  border-bottom: 1px solid white;
+}
+
+.alert {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px 0 !important;
+}/*# sourceMappingURL=style.css.map */
